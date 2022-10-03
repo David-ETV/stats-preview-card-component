@@ -131,9 +131,14 @@ section{
 
 .images{
   position: relative; 
+  z-index: 1;
+  
 }
-
-
+img{
+  mix-blend-mode: multiply;
+  opacity: 80%;
+}
+.overlay,
 .images,
 img {
   width: 100%;
@@ -150,9 +155,9 @@ img {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: var(--Soft-violet);
+  height: 97.7%;
+  background-color: hsl(277, 64%, 61%);
+  z-index: -1;
 }
 
 .container{
@@ -216,7 +221,7 @@ span{
     height: 100%;
     
   }
-
+  .overlay,
   img{
     height: 100%;
     border-top-left-radius: 0;
